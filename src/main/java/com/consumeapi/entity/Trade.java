@@ -60,5 +60,10 @@ public class Trade {
 	public void setIsBestMatch(Boolean isBestMatch) {
 		this.isBestMatch = isBestMatch;
 	}
+	@Override
+	public String toString() {
+		return "Trade [id=" + id + ", price=" + price + ", qty=" + qty + ", quoteQty=" + quoteQty + ", time=" + time
+				+ ", isBuyerMaker=" + isBuyerMaker + ", isBestMatch=" + isBestMatch + "]";
+	}
 
 }
