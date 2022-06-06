@@ -15,8 +15,9 @@ public class Trade {
 	private long time;
 	private Boolean isBuyerMaker;
 	private Boolean isBestMatch;
-	
-	
+	public Trade() {
+		super();
+	}
 	public long getId() {
 		return id;
 	}
@@ -47,9 +48,6 @@ public class Trade {
 	public void setTime(long time) {
 		this.time = time;
 	}
-	
-	
-
 	public Boolean getIsBuyerMaker() {
 		return isBuyerMaker;
 	}
@@ -61,15 +59,6 @@ public class Trade {
 	}
 	public void setIsBestMatch(Boolean isBestMatch) {
 		this.isBestMatch = isBestMatch;
-	}
-	public Trade() {
-		super();
-		
-	}
-	@Override
-	public String toString() {
-		return "Trade [id=" + id + ", price=" + price + ", qty=" + qty + ", quoteQty=" + quoteQty + ", time=" + time
-				+ ", isBuyerMaker=" + isBuyerMaker + ", isBestMatch=" + isBestMatch + "]";
 	}
 
 }
